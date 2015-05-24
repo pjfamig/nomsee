@@ -1,11 +1,7 @@
 <div class="row">
-  <div class="col-md-3">
-  </div>
-  <div class="col-md-6 col-md-offset-3">
-	<p>[PHOTO]</p>
-	<p>[Title]</p>
-	<p>[Location]</p>
-  </div>
-  <div class="col-md-3 col-md-offset-9">
+  <div class="col-md-12 center">
+	<p><%= image_tag @post.photo.url if @post.photo? %></p>
+	<p><%= @post.title %></p>
+	<p><%= @post.location %></p>
   </div>
 </div>
