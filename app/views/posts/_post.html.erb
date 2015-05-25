@@ -1,5 +1,8 @@
-<div class="col-md-3">
-<%= image_tag post.photo.url(:thumb), :class => "img-rounded", :width => "120px" %>	
-<p><%= post.title %></p>
-<p><%= post.location %></p>
+<div class="col-lg-3 col-md-4 col-xs-12 thumb">
+	<a class="thumbnail" href="<%= post_path(post.id) %>">
+		<%= image_tag post.photo.url, 
+		:class => "img-responsive" %>
+	</a>	
+	<p><%= post.title %></p>
+	<p><%= post.location %></p>
 </div>

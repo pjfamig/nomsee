@@ -2,7 +2,7 @@
   <%= render 'shared/error_messages', object: f.object %>
 
   <div class="field">
-  <%= f.file_field :photo, accept: 'image/jpeg,image/gif,image/png' %>
+  <%= f.file_field :photo, accept: 'image/jpeg,image/gif,image/png', multiple: true, name: "post[photo]" %>
   </div>
   <div class="field">
     <%= f.text_field :title, placeholder: "Title (optional)", class: 'form-control' %>

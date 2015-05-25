@@ -19,6 +19,7 @@ gem 'fog',                  '1.23.0'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'will_paginate',           '3.0.7'
 gem 'redcarpet'
+gem 'jquery-fileupload-rails'
 
 group :development, :test do
   gem 'sqlite3',            '1.3.9'
